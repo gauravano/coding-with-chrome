@@ -158,13 +158,10 @@ closureBuilder.build({
 closureBuilder.build({
   name: 'Shepherd',
   resources: [
-    // ToDo: Remove patched url after PR is merged.
-    'https://raw.githubusercontent.com/MarkusBordihn/shepherd/master/dist/js/' +
-    'shepherd.min.js',
-    // 'third_party/shepherd/dist/js/shepherd.min.js',
-    'third_party/tether/dist/js/tether.min.js',
+    'node_modules/shepherd.js/dist/js/popper.min.js',
+    'node_modules/shepherd.js/dist/js/shepherd.min.js',
   ],
-  out: 'genfiles/third_party/external/shepherd',
+  out: 'genfiles/third_party/external/shepherd/',
 });
 
 

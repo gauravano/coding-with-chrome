@@ -205,6 +205,7 @@ cwc.ui.Library.prototype.showMediaUpload = function() {
  */
 cwc.ui.Library.prototype.startTour = function() {
   if (this.tour_) {
+    this.log_.info('Starting tour ...');
     this.tour_.start();
   }
 };
